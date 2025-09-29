@@ -33,7 +33,8 @@ const Home = () => {
   return (
     <div>
       {/* Hero / Banner Section */}
-     <section  className="relative h-[77vh] md:h-[55vh] medium (≥768px) lg:h-[70vh]  flex items-center justify-center text-center text-white overflow-hidden"
+<section
+  className="relative h-[70vh] sm:h-[65vh] md:h-[55vh] lg:h-[70vh] xl:h-[80vh] flex items-center justify-center text-center text-white overflow-hidden"
 >
   {/* Background Image */}
   <img
@@ -50,26 +51,26 @@ const Home = () => {
     initial={{ opacity: 0, y: -30 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 0.8 }}
-    className="relative z-10 max-w-5xl px-6"
+    className="relative z-10 max-w-5xl px-4 sm:px-6"
   >
     {/* Heading */}
-    <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg mt-20">
-       Fresh Spices from Nature’s Heart 
+    <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight drop-shadow-lg mt-16 sm:mt-20">
+      Fresh Spices from Nature’s Heart
     </h1>
 
     {/* Subheading */}
-    <p className="text-base sm:text-lg md:text-xl mb-10 max-w-2xl mx-auto text-white/90 drop-shadow-md">
+    <p className="text-sm sm:text-base md:text-lg lg:text-xl mb-8 sm:mb-10 max-w-2xl mx-auto text-white/90 drop-shadow-md">
       Handpicked cardamom, cinnamon, pepper, and more — naturally sourced and
-      carefully packed to bring **authentic flavors** straight to your kitchen.
+      carefully packed to bring <span className="font-semibold">authentic flavors</span> straight to your kitchen.
     </p>
 
     {/* CTA Buttons */}
-    <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mb-12">
+    <div className="flex flex-col sm:flex-row justify-center gap-4 md:gap-6 mb-10 sm:mb-12">
       <motion.a
         href="#products"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="px-8 py-3 bg-[#2E7D32] hover:bg-[#D2691E] text-white font-semibold rounded-full shadow-lg transition-all duration-300"
+        className="px-6 sm:px-8 py-2 sm:py-3 bg-[#2E7D32] hover:bg-[#D2691E] text-white font-semibold rounded-full shadow-lg transition-all duration-300 text-sm sm:text-base"
       >
         Shop Now
       </motion.a>
@@ -77,20 +78,21 @@ const Home = () => {
         href="#about"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
-        className="px-8 py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#4E342E] transition-all duration-300"
+        className="px-6 sm:px-8 py-2 sm:py-3 border-2 border-white text-white font-semibold rounded-full hover:bg-white hover:text-[#4E342E] transition-all duration-300 text-sm sm:text-base"
       >
         Learn More
       </motion.a>
     </div>
 
     {/* Features */}
-    <div className="flex flex-wrap justify-center gap-6 md:gap-10 text-sm md:text-base text-white/90 font-medium">
+    <div className="flex flex-wrap justify-center gap-4 sm:gap-6 md:gap-10 text-xs sm:text-sm md:text-base text-white/90 font-medium">
       <span className="flex items-center gap-2">🌍 100% Natural</span>
       <span className="flex items-center gap-2">🚚 Free Shipping</span>
       <span className="flex items-center gap-2">💳 Secure Payments</span>
     </div>
   </motion.div>
 </section>
+
 
 
       {/* Products Section */}
