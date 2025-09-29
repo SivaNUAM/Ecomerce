@@ -101,11 +101,11 @@ const Home = () => {
   className="py-24 bg-gradient-to-b from-[#FAF9F6] to-[#FFF8E1]"
 >
   <div className="max-w-7xl mx-auto px-6 text-center">
-    <h2 className="text-4xl md:text-5xl font-bold text-[#2E7D32] mt-[-60px]">
+    <h2 className="text-4xl md:text-5xl font-bold text-[#2E7D32] mt-[-65px]">
       Our Premium Spices
     </h2>
 
-    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-5">
+    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-15">
       {products.map((product) => (
         <div
           key={product.id}
