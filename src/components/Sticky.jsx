@@ -5,16 +5,19 @@ const Sticky = () => {
     <a
       href="#ayurvedic"
       className="
-        fixed bottom-4 right-4 z-50
-        bg-gradient-to-r from-green-500 to-green-600
-        text-white font-bold
-        px-5 py-3 sm:px-6 sm:py-3
-        rounded-full shadow-2xl
-        hover:from-green-600 hover:to-green-700
-        hover:scale-105 transform transition-all duration-300
+        fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50
+        bg-gradient-to-r from-green-500 via-green-600 to-green-700
+        text-white font-semibold tracking-wide
+        px-6 py-3 sm:px-7 sm:py-3.5
+        rounded-full shadow-xl backdrop-blur-md
+        hover:from-green-600 hover:via-green-700 hover:to-green-800
+        hover:scale-105 active:scale-95
+        transition-all duration-300 ease-out
         flex items-center justify-center gap-3
         text-sm sm:text-base
-        ring-2 ring-green-400/30 hover:ring-green-500/50
+        cursor-pointer select-none
+        ring-2 ring-green-400/40 hover:ring-green-500/60
+        animate-bounce
       "
     >
       {/* Leaf Icon */}
@@ -33,7 +36,7 @@ const Sticky = () => {
         />
       </svg>
 
-      <span>Explore Ayurvedic Products</span>
+      <span className="whitespace-nowrap">Explore Ayurvedic</span>
     </a>
   );
 };
