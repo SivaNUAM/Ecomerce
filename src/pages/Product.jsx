@@ -102,7 +102,10 @@ import card11 from "../assets/images/card11.png"
     const Product = () => {
       return (
         <div>
-  <section id="products" className="py-24 bg-gradient-to-b from-[#FAF9F6] to-[#FFF8E1]">
+<section
+  id="products"
+  className="py-24 bg-gradient-to-b from-[#FAF9F6] to-[#FFF8E1]"
+>
   <div className="max-w-7xl mx-auto px-6 text-center">
     <h2 className="text-4xl md:text-5xl font-bold text-[#2E7D32] mb-16">
       Our Premium Spices
@@ -112,7 +115,7 @@ import card11 from "../assets/images/card11.png"
       {products.map((product) => (
         <div
           key={product.id}
-          className="bg-[#FFFDF5] rounded-2xl border border-[#E0C9A6]/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center p-6 group"
+          className="bg-[#FFFDF5] rounded-2xl border border-[#E0C9A6]/60 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center p-6 group cursor-pointer"
         >
           {/* Product Name */}
           <h3 className="text-[#4E342E] text-lg sm:text-xl font-semibold mb-4 group-hover:text-[#2E7D32] transition-colors duration-300">
@@ -136,7 +139,7 @@ import card11 from "../assets/images/card11.png"
           {/* Add to Cart Button */}
           <button
             onClick={() => addToCart(product)}
-            className="mt-auto w-full px-5 py-2 sm:py-3 rounded-full font-semibold text-white bg-gradient-to-r from-[#2E7D32] to-[#4E9E45] hover:from-[#D2691E] hover:to-[#C75B1B] shadow-md hover:shadow-xl transition-all duration-300"
+            className="mt-auto w-full px-5 py-2 sm:py-3 rounded-full font-semibold text-white bg-gradient-to-r from-[#2E7D32] to-[#4E9E45] hover:from-[#D2691E] hover:to-[#C75B1B] shadow-md hover:shadow-xl transition-all duration-300 cursor-pointer"
           >
             Add To Cart
           </button>
@@ -145,6 +148,7 @@ import card11 from "../assets/images/card11.png"
     </div>
   </div>
 </section>
+
 
 
         </div>

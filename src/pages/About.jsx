@@ -8,7 +8,7 @@ const About = () => {
 
       {/* Header */}
       <header className="relative z-10 py-20 px-6 md:px-12 text-center max-w-5xl mx-auto">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-green-800 mb-5">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-green-800 mt-9">
           Our Spice Legacy
         </h1>
         <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-3xl mx-auto">
